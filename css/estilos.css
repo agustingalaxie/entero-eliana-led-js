@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url(menu.css);
+@import url(info.css);
+@import url(articulos.css);
+@import url(contacto.css);
+@import url(acercade.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+ header {
+    width: 100%;
+    height:50px;
+    background: rgb(54, 52, 52);
+    color:white;
+
+    position: fixed; /* para que ese quede pegado*/
+    top: 0;
+    left: 0;
+    z-index: 100; /*siempre por delante de los elementos*/
+ }
+
+
+ 
+ 
+ .contenedor {
+     width: 98%;
+     margin: auto;
+
+
+ }
+
+ h1 {
+     float:left;
+     font-size: 14px; /*cambiar tamaño de letra*/
+     
+ }
+
+ header .contenedor {
+    display: table;
+ }
+
+ section {
+     width: 100%;
+     margin-bottom: 25px;
+
+ }
+ #Bienvenidos {
+     text-align:center;
+     background-color: lightcyan;
+     font-weight: 100rem;
+     margin-top: 50px;
+     
+ }
+
+footer.contenedor {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+    background-color:rgb(54, 52, 52) !important;
+
+}
+
+ .copy {
+     font-size: 20px;
+     text-align: center;
+
+ }
+
+.sociales {
+    width:100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    color:pink;
+    text-decoration: none;
+
+}
+.derechos {
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    .sociales {
+        width: auto;
+    }
+    footer .contenedor {
+        justify-content: space-between; /*en tablet al lado*/
+    }
+}
+
+@media (min-width:1024px) {
+    .contenedor {
+        width: 1000px;
+    }
+}
+
+.contacto {
+    background-color:lightblue;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .contacto {
+        width:100%;
+        
+    }
+}
+
