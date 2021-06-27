@@ -1,22 +1,20 @@
 *{
     box-sizing: border-box;
 }
-#menu-bar {
-    display: none;
-    
-    
-}
 header label {
     float: right;
     font-size: 28px;
     margin: 6px 0;
     cursor: pointer; /*mouse se transforma en mano*/
 
-
 }
 
+.container-fluid h2{
+    font-size: 2em;
+    display: inline;
+}
 .menu{
-    position:absolute;
+    position: absolute;
     top: 50px; /*para que empiece desde abajo del nombre*/
     left: 0;
     width: 100%;
@@ -24,7 +22,6 @@ header label {
     background-color: rgb(54, 52, 52, 0.9);
     transition: all 0.5s;
     transform: translateX(-100%); /*despliega la hamburguesa*/
-
 }
 
 .menu a {
@@ -34,8 +31,6 @@ header label {
     text-decoration: none;
     padding: 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-
-
 }
 
 .menu a:hover { /*cuando pase el mouse mismo clor blanco*/
