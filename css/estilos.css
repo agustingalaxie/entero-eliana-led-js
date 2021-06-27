@@ -63,7 +63,6 @@ footer.contenedor {
     justify-content: center;
     padding-bottom: 25px;
     background-color:rgb(54, 52, 52) !important;
-
 }
 
  .copy {
@@ -90,6 +89,7 @@ footer.contenedor {
 #facultad {
     width: 800px; /*ancho*/
     margin: auto; /*centrado*/
+    text-align: center;
     background-color: lightblue;
     padding: 10px 20px; /*relleno vertical y horizontal*/
     box-sizing: border-box;
@@ -100,9 +100,8 @@ footer.contenedor {
 .historia {
     color: blue;
     text-align: center;
-    margin: 0;
     font-size: 30px;
-    margin-bottom: 10px;
+    padding: 5%;
 }
 
 @media (min-width:768px) {
@@ -132,3 +131,8 @@ footer.contenedor {
     }
 }
 
+@media (max-width: 480px) {
+    #facultad {
+        width:50%;        
+    }
+}

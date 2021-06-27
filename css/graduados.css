@@ -1,31 +1,38 @@
 section {
     background-color: white;
     margin:0;
-
 }
-.contenedor{
+
+.graduados{
     box-shadow: 10px 10px 5px grey;
-}
-
-#contacto {
-    width: 450px; /*ancho*/
+    width: 75%; /*ancho*/
     margin: auto; /*centrado*/
     background-color: lightblue;
-    padding: 10px; /*relleno vertical y horizontal*/
+    padding: 10px 20px; /*relleno vertical y horizontal*/
     box-sizing: border-box;
     margin-top: 20px;
     border-radius: 7px;
-}
-
-.h1-responsive {
-    color: blue;
     text-align: center;
-    margin: 0;
-    font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 5%;
 }
 
-input, textarea, select {
+.titulo {
+    color: #7075CC;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 30px;
+    margin-top: 5%;
+}
+form p, h2, h3{
+    margin-top: 5%;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn:last-child{
+    margin-bottom: 5%;
+}
+input{
     width: 70%;
     margin-bottom: 20px;
     padding:7px;
@@ -35,16 +42,5 @@ input, textarea, select {
     border-radius: 3px;
     background-color: #f0f8ff;
     box-shadow: 5px 5px 3px grey;
-}
-
-textarea {
-    min-height: 80px; 
-    max-width: 200px;
-    max-width: 70%;
-}
-
-.btn{
-    margin-top: 5%;
-    margin-bottom: 2%;
 }
 

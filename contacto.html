@@ -1,43 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mi facultad</title>
+    <title>Esc. Superior Nº 49 "Cap. Gral. J.J. Urquiza" - Terciario</title>
     <link rel="icon" href="img/favicon.ico">
     <script src="https://kit.fontawesome.com/a94665e5ba.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu+Mono&display=swap">
-    <link rel="stylesheet" href=css/estilos.css> 
-
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu+Mono&display=swap">
+    <link rel="stylesheet" href=css/estilos.css>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ubuntu+Mono&display=swap">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </head>
+
 <body>
     <header>
-        <div class="contenedor">
-            <h1 class="fas fa-laptop-code"> Esc. Superior Nº 49  "Cap. Gral. J.J. Urquiza" - Nivel Terciario</h1>
-            <input type="checkbox" id="menu-bar">
-            <label class="fas fa-bars" for="menu-bar"></label>
+        <div class="container-fluid">
+            <h2 class="fas fa-laptop-code"> Esc. Superior Nº 49 "Cap. Gral. J.J. Urquiza" - Terciario</h2>
             <nav class="menu">
                 <a href="index.html">Inicio</a>
-                <a href="form.html">Registrarse</a>
-                <a href="contacto.html">Contactanos</a>
-                <a href="Acerca de.html">Acerca de</a>
-                
+                <a href="contacto.html">Registrar consultas</a>
+                <a href="graduados.html">Graduad@s</a>             
             </nav>
         </div>
     </header>
     <br>
     <br>
     <br>
-    
+
     <div class="contenedor">
         <div class="contacto">
-        <p>Nuestra institución se encuentra ubicada en la ciudad de Rosario</p>
-        <a href="mailto:eliamdalpino@gmail.com">ENVIANOS UN CORREO <a href=""></a>:</a>
-            <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6695.384256811479!2d-60.664548924318154!3d-32.959136873669415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab71d4358d3f%3A0xb7ef373f1ab15369!2sParque%20Independencia%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1618858860835!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <form action="url" method="post">
+                <h2>En el siguiente formulario podés enviarnos tu consulta y tus datos de contacto.</h2>
+                <label>Nombre: </label><br>
+                <input type="text" name="nombre" value="" min="0" max="20" placeholder="Nombre" />
+                <br>
+                <label>Apellido: </label><br>
+                <input type="text" name="apellido" value="" min="0" max="20" placeholder="Apellido" />
+                <br>
+                <label>Teléfono: </label><br>
+                <input type="tel" name="telefono" value=""  min="0" max="10" step="3" placeholder="Telefono" />
+                <br>
+                <label>Mail: </label><br>
+                <input type="email" name="mail" value="" placeholder="Mail" />
+                <br>
+                <label>Rango horario de contacto:</label><br>
+                <select>
+                    <option value="cualquier-horario">Cualquier horario</option>
+                    <option value="horario-maniana">Por la mañana</option>
+                    <option value="horario-tarde">Por la tarde</option>
+                </select>
+                <br>
+                <label>Consulta</label><br>
+                <textarea type="text" name="mail" value="" placeholder="Consulta"></textarea>
+                <br>
+                <input type="submit" class="btn btn-primary col-8" value="Enviar consulta" />
+                <input type="reset" name="limpiar" class="btn btn-secondary col-4" value="Reiniciar campos" />
+                <h3>Nuestra institución se encuentra ubicada en la ciudad de Rosario</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6695.384256811479!2d-60.664548924318154!3d-32.959136873669415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab71d4358d3f%3A0xb7ef373f1ab15369!2sParque%20Independencia%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1618858860835!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
 </body>
@@ -53,7 +83,7 @@
             <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
         <div class="derechos">
-            <p>2021 Eliana Dalpino S.A. Todos los derechos reservados.</p>
+            <p>2021 Grupo07 {Eliana Dalpino, Agustín Galeazzi, } S.A. Todos los derechos reservados.</p>
         </div>
     </div>
 </footer>
