@@ -1,2 +1,1 @@
-# entero-eliana-led-js
- pagina entera de 
+Pagina para el primer trabajo teórico grupal de Lógica y Estructura de datos. Creada por Eliana Dalpino, Agustin Galeazzi y Pedro Roberti. 2021.
