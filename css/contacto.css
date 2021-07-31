@@ -1,7 +1,6 @@
 section {
     background-color: white;
     margin:0;
-
 }
 .contenedor{
     box-shadow: 10px 10px 5px grey;
@@ -47,4 +46,3 @@ textarea {
     margin-top: 5%;
     margin-bottom: 2%;
 }
-
