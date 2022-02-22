@@ -44,6 +44,12 @@
                 <form action="url" method="post" enctype="multipart/form-data">
                     <label>Nombre: </label><br>
                     <input type="text" name="nombre" value="" placeholder="Nombre" /><br>
+                    <label for="BirthDate"> Fecha de nacimiento (dd/mm/yyyy): </label>  
+                    <input type="date" name="BirthDate" id="fechanacimiento" value="" onChange="checkearEdad()"> <br>  
+                    <div id="avisoEdad"></div>
+                    <label for="presentacion">  Escriba aquí una pequeña presentación suya: </label>                    
+                    <textarea name="mensaje" placeholder="Escriba aquí su presentación" onkeyup="countChars(this);"></textarea> <br>
+                    <div id="charNum"></div>
                     <label>Curriculum:</label><br>
                     <input type="file" name="adjunto" /><br>
                     <input type="submit" class="btn btn-primary col-8" value="Enviar curriculum" />
@@ -61,10 +67,11 @@
                 <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
             <div class="derechos">
-                <p>2021 Grupo07 {Eliana Dalpino, Agustín Galeazzi, Pedro Roberti } S.A. Todos los derechos reservados.</p>
+                <p>2021 Grupo07 {Agustín Galeazzi} S.A. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
+    <script src="js/js.js" ></script>
 </body>
 
 </html>
